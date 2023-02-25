@@ -1,6 +1,20 @@
 body {
+    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 500px;
+}
+
+button {
+    height: 50px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: beige;
+    font-size: 1.5em;
+    border: none;
+}
+
+button:hover {
+    background-color: rgba(245, 245, 220, 0.644);
 }
