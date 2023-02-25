@@ -1,13 +1,14 @@
-const colours = ['black','red','gold','teal','orange','yellow','bronze','lime','green', 'magenta'];
+const colours = ['black', 'red', 'gold', 'teal', 'orange', 'yellow', 'bronze', 'lime', 'green', 'magenta'];
 
 const button = document.querySelector('button');
 
 // testing if your random logic can result in the value of 0;
 const randTest = () => {
     let zeroFound = false;
-    for(let i = 0; i < 10000; i++){
-        if(Math.floor(Math.random() * 10) + 1 == 0){
+    for (let i = 0; i < 10000; i++) {
+        if (Math.floor(Math.random() * 10) + 1 == 0) {
             zeroFound = true; // if it's still not true after 10,000 iterations it's probably safe to assume it will never be 0 with this logic :P
+            break; // no point finishing the iterations if you've found a zero :P
         }
     }
     // ternary ftw
