@@ -15,7 +15,7 @@ const randTest = () => {
     let message = zeroFound ? "Zero Found!" : "Zero Not Found!";
     alert(message); // console.log is a better alternative when testing values :P
 }
-randTest();
+// randTest();
 
 // suggested alternative random logic below
 // Returns a random integer from 0 to 9:
