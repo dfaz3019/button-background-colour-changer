@@ -17,8 +17,8 @@ const randTest = () => {
 randTest();
 
 // suggested alternative random logic below
-// Returns a random integer from 0 to 10:
-// Math.floor(Math.random() * 11); 
+// Returns a random integer from 0 to 9:
+// Math.floor(Math.random() * 10); 
 
 button.addEventListener('click', () => {
     var randomColour = Math.floor(Math.random() * 10) + 1; // let keyword might be better than var here :O
